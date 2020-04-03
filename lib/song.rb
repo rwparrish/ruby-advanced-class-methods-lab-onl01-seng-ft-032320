@@ -54,8 +54,8 @@ class Song
     data.delete_suffix!(".mp3")
     arr = data.split(" - ")
     song = self.new
-    song.artist_name = arr[1]
     song.name = arr[0]
+    
     song
   end
   
