@@ -12,24 +12,24 @@ class Song
   
   def self.create
 #instatiates song, saves song, then returns song
-    song = self.new
-    song.save
-    song
+    @name = self.new
+    @name.save
+    @name
   end
   
   def self.new_by_name(name)
 #instatiates song, give it a name property, return name
-    song = self.new
-    song.name = name
-    song
+    @name = self.new
+    @name.name = name
+    @name
   end
   
   def self.create_by_name(name)
 #instatiates name, saves to @@all[]
-    song = self.new
-    song.name = name
-    song.save
-    song
+    @name = self.new
+    @name.name = name
+    @name.save
+    @name
   end
   
   def self.find_by_name(name)
