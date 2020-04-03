@@ -55,7 +55,7 @@ class Song
     arr = data.split(" - ")
     song = self.new
     song.name = arr[0]
-    
+    song.artist_name = arr[1]
     song
   end
   
